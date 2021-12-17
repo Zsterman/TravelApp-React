@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { CssBaseline, Grid } from '@material-ui/core';
-
 import { getPlacesData } from './api';
 import Header from './components/Header/Header';
 import List from './components/List/List';
@@ -10,10 +9,8 @@ const App = () => {
     const [places, setPlaces] = useState([]);
     const [filteredPlaces, setFilteredPlaces] = useState([]);
     const [childClicked, setChildClicked] = useState(null);
-
     const [coordinates, setCoordinates] = useState({});
     const [bounds, setBounds] = useState({});
-
     const [isLoading, setisLoading] = useState(false);
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('');
